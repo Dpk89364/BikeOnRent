@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DP-Bike Rental Service</title>
+  <link rel="shortcut icon" type="image/png" href="images/dp.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="comman.css">
+  <link rel="stylesheet" type="text/css" href="reservation.css">
+  <script type="text/javascript" src="price.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="scrollquery.js"></script>
+</head>
+<body>
+  <div id="preloader"></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="div1">
+    <div class="hdiv">
+      <div class="hdiv1">
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100008776566092" target="_blank"><img src="images/fb.png" height="35px" width="35px"></a>
+        <a href="https://twitter.com/pmkanani007" target="_blank"><img src="images/twitter.png" height="35px" width="35px"></a>
+        <a href="https://www.linkedin.com/in/parth-kanani-105763167/" target="_blank"><img src="images/in.png" height="35px" width="35px"></a>
+        <a href="https://www.instagram.com/parth_kanani/" target="_blank"><img src="images/insta.png" height="35px" width="35px"></a>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/llogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:10px "><br>Surat , Anand <br>and Nadiad</p>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/tlogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:15px "><br> Everyday 07:00 am - 9.00 pm</p>
+      </div>
+      <div class="hdiv1">
+        <br>
+        <a href="signup.html" class="login-reg">Sign Up Now</a>
+    </div>
+    <img src="images/dp.png" align="left" width="80px" height="80px" style="margin-left: 150px; margin-top: 78px">
+    <div id="manu">
+      <div class="manudiv">
+        <a href="home.html"><p>Home</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="bikes.html"><p>Collection</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="history.html"><p>History</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="about.html"><p>About Us</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="contact us.html"><p>Help</p></a>
+      </div>
+    </div>
+    <br><br>
+    <h1 style="color: white;margin-left: 150px">Reserv Your Bike</h1>
+    <p style="margin-left: 150px"><img src="images/home.png" width="10px" height="10px">  Home    <img src="images/circle.png" width="8px" height="8px">   Reservation</p>
+  </div>
+
+
+
+
+
+  <h1 style="margin-left: 50px">Extra Benifit And Fee</h1>
+  <form id="benifit-form" onclick="">
+    <table style="margin-left: 50px;width: 890px">
+      <tr>
+        <td><input type="checkbox" name="benifit" value="20">Mobile Screen</td>
+        <td><input type="checkbox" name="benifit" value="3">Childen Seat</td>
+     </tr>
+     <tr>
+        <td><input type="checkbox" name="benifit" value="10">Backfast or Lunch $10 Per Day</td>
+        <td><input type="checkbox" name="benifit" value="30">Bike Insurances</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="benifit" value="18">Helmate</td>
+        <td><input type="checkbox" name="benifit" value="5">Security & Safety</td>
+      </tr>
+      <tr>
+        <td><button type="submit" class="submit">Apply</button></td>
+      </tr>
+    </table>
+  </form>
+  <form action="reservation.php" method="POST">
+    <table style="margin-left: 50px;width: 890px;">
+      <tr>
+          <td colspan="2">
+            <select id="no_of_part1" name="bikename" onchange="amount1()" required="">
+                  <option value="0$" selected="" >Select your Bike</option>
+                  <option value="Kawasaki Ninja H2R">Kawasaki Ninja H2R</option>
+                  <option value="KTM RC8">KTM RC8</option>
+                  <option value="Bajaj V2$">Bajaj V22</option>
+                  <option value="Honda Shaine">Honda Shaine</option>
+                  <option value="Honda SP12$">Honda SP125</option>
+                  <option value="Kawasaki Ninja 300">Kawasaki Ninja 300</option>
+                  <option value="Yamaha MT15">Yamaha MT15</option>
+                  <option value="Yamaha YZF R1">Yamaha YZF R1</option>
+                  <option value="Bajaj Pulsar 220F">Bajaj Pulsar 220F</option>
+                  <option value="TVS Apach RTR180">TVS Apach RTR180</option>
+                </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" name="pickup_location" placeholder="Pickup Location" required=""></td>
+          <td><input type="text" name="drop_location" placeholder="Drop Location" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="Date" name="pickup_date" placeholder="Pickup Date" required=""></td>
+          <td><input type="Date" name="drop_date" placeholder="Drop Date" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="time" name="pickup_time" placeholder="Pickup Time" required=""></td>
+          <td><input type="time" name="drop_time" placeholder="Drop Time" required=""></td>
+        </tr>
+        <tr>
+          <td>
+            <b style="margin-left: 30px">Total:</b>
+          </td>
+          <td>
+            <p id="total" name="price" style="color: black"><b>0 $</b></p>
+          </td>
+        </tr>
+      </table>
+      <h1 style="margin-left: 50px">Personal Information</h1>
+      <table style="margin-left: 50px;width: 890px;">
+        <tr>
+          <td><input type="text" placeholder="Name" required=""></td>
+          <td><input type="E-mail" name="email" placeholder="E-mail" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="phone" placeholder="Phone" required=""></td>
+          <td><input type="text" name="city" placeholder="city" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="phone" name="zip_code" placeholder="Zip Code" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="radio" name="gender" value="Male">Male</td>
+          <td><input type="radio" name="gender" value="Female">Female</td>
+        </tr>
+      </table>
+      <h1 style="margin-left: 50px">Payment Method</h1>
+      <table style="margin-left: 50px;width: 890px;">
+        <tr>
+          <td>
+            <select>
+              <option selected="">Payment Method</option>
+              <option>PayTm</option>
+              <option>G-Pay</option>
+              <option>Credit Card</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <h1 style="margin-left: 50px">Additional Information</h1>
+      <table style="margin-left: 50px;width: 890px">
+        <tr>
+          <td><textarea rows="10" cols="20" name="info" placeholder="Write Additonal Information Here..."></textarea></td>
+        </tr>
+      </table>
+      <table style="margin-left: 50px;width: 100px">
+        <tr>
+          <td><button type="reset" class="reset">cancel</button></td>
+          <td><button type="submit" class="submit">Reservation</button></td>
+        </tr>
+      </table>
+  </form>
+
+
+  <div class="reserv-support">
+    <img src="images/dhruvin.png" align="center" width="100px" height="100px" style="border-radius: 100px; border: outset;margin-top: 40px;margin-left: 575px;">
+    <h1 style="color: white;text-align: center">Dhruvin Koshiya</h1>
+    <p style="text-align: center;color: white; font-size: 20px">Business Man</p>
+    <p style="text-align: center;color: white; font-size: 20px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore<br> et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas<br> accumsan lacus vel facilisis.  </p>
+    <span class="fa fa-star checked" style="margin-left: 575px"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+  </div>
+  <hr style="border-color: #CD0000">
+  <div class="last">
+    <div class="app-div5">
+      <img src="images/dp.png" style="margin-left: 20px;margin-top: 40px" width="60px" height="60px">
+      <p style="color: white; font-size: 17px;margin-left: 20px">Search the bike you want to ride and book it easily with online payment and we will provide one at your doorstep.Make sure you have licence to ride the bike.</p>
+          <br>
+          <a href="facebook.com"><img src="images/facebook.png" style="margin-left: 20px" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/twitter.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/in.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/google.png" height="35px" width="35px"></a>
+    </div>
+    <div class="app-div6">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Our Bikes</h2>
+      <br>
+      <ul style="list-style-type: sidama;margin-left: 20px;color: white">
+        <li>Honda Shine</li>
+        <li>Hero Splender</li>
+        <li>Honda Activa</li>
+        <li>Hero Maestro</li>
+        <li>Honda Unicorn</li>
+        <li>TVS Jupiter</li>
+        <li>Yamaha FZ5</li>
+        <li>Suzuki Gixxer</li>
+        <li>Bajaj Pulsar</li>
+        <li>Vespa Scooter</li>
+      </ul>
+    </div>
+
+    <div class="app-div8">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Contact Us</h2>
+      <br>
+      <div class="simbol">
+        <img src="images/llogo.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px" >A-12,Darshan Hostel,Changa,Anand</p>
+      <div class="simbol">
+        <img src="images/message.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">www.bikeisyours.com www.support.bikeisyours@gmail.com</p>
+      <div class="simbol">
+        <img src="images/phone.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">+91-8758588958 , +91-8980942662</p>
+    </div>
+  </div>
+</body>
+</html>
+</body>
+</html>

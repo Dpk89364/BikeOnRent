@@ -1,0 +1,201 @@
+
+.login-reg{
+  margin-top: 100px;
+  font-size: 28px;
+}
+
+
+#myBox {
+  background-color: lightblue;
+  height: 140
+  width: 100px;
+  border: 15px solid lightgrey;
+}
+.overlap{
+
+    	top: -80px;
+		position: relative;
+		width: 950px;
+		height: 480px;
+		display: block;
+		margin-left: 150px;
+        padding: 10px;
+        border-radius: thin;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+
+}
+.title{
+	margin-left: 30px;
+	font-family: "thin";
+}
+.reservform{
+	width: 100%;
+    border-color: #e5e5e5;
+    color: #777777;
+}
+
+input[type=text],input[type=E-mail],input[type=phone],input[type=date],input[type=time], select{
+		  width: 100%;
+      height: 45px;
+		  padding: 5px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		  background-color:white;
+		}
+textarea{
+  width: 100%;
+      padding: 5px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      background-color:white;
+}
+.submit{
+		  background-color: #CD0000;
+		  color: white;
+		  padding: 14px 20px;
+		  margin: 8px 0;
+		  border: none;
+		  border-radius: 4px;
+		  cursor: pointer;
+		}
+
+#left_side {
+    float: left;
+    margin-left: 150px;
+    position: relative;
+		width: 300px;
+		height: 300px;
+		display: block;
+        border-radius: thin;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#center_s {
+	float:center;
+
+    margin-left: auto;
+    margin-right: auto;
+		position: relative;
+		width: 300px;
+		height: 300px;
+		display: block;
+        border-radius: thin;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+}
+
+#right_side {
+    float: right;
+    margin-right: 150px;
+    position: relative;
+		width: 300px;
+		height: 300px;
+		display: block;
+        border-radius: thin;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        background-color: white;
+}
+
+.app-view{
+	position: relative;
+    opacity: 1;
+    height: 500px;
+    width: 1250px;
+    background-size: cover;
+}
+.app-div{
+	position: relative;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 500px;
+}
+.app-div2{
+	position: relative;
+    float: left;
+    width: 30%;
+    padding: 10px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.app-div3{
+	position: relative;
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 330px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CD0000;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.consultation{
+  position: relative;
+    opacity: 1;
+    margin-top: 380px;
+    height: 520px;
+    width: 1250px;
+    background-size: cover;
+}
+.consultation-div{
+  position: relative;
+  margin-top: 20px;
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 500px;
+}
+.consultation-pic-div{
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+    float: left;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

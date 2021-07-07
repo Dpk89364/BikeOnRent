@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DP-Bike Rental Service</title>
+  <link rel="shortcut icon" type="image/png" href="images/dp.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="comman.css">
+  <link rel="stylesheet" type="text/css" href="bikes.css">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="scrollquery.js"></script>
+</head>
+<body>
+  <div id="preloader"></div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div class="bike-banner">
+    <div class="hdiv">
+      <div class="hdiv1">
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100008776566092" target="_blank"><img src="images/fb.png" height="35px" width="35px"></a>
+        <a href="https://twitter.com/pmkanani007" target="_blank"><img src="images/twitter.png" height="35px" width="35px"></a>
+        <a href="https://www.linkedin.com/in/parth-kanani-105763167/" target="_blank"><img src="images/in.png" height="35px" width="35px"></a>
+        <a href="https://www.instagram.com/parth_kanani/" target="_blank"><img src="images/insta.png" height="35px" width="35px"></a>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/llogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:10px "><br>Surat , Anand <br>and Nadiad</p>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/tlogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:15px "><br> Everyday 07:00 am - 9.00 pm</p>
+      </div>
+      <div class="hdiv1">
+        <br>
+        <a href="signup.html" class="login-reg">Sign Up Now</a>
+      </div>
+    </div>
+    <img src="images/dp.png" align="left" width="80px" height="80px" style="margin-left: 150px; margin-top: 78px">
+    <div id="manu">
+      <div class="manudiv">
+        <a href="home.html"><p>Home</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="bikes.html"><p>Bike Collection</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="history.html"><p>History</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="about.html"><p>About Us</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="contact us.html"><p>Help</p></a>
+      </div>
+    </div>
+    <br><br>
+    <h1 style="color: white;margin-left: 150px">Reservation</h1>
+    <p style="margin-left: 150px"><img src="images/home.png" width="10px" height="10px">  Home   <img src="images/circle.png" width="8px" height="8px">   Bikes   <img src="images/circle.png" width="8px" height="8px">   Reservation</p>
+  </div>
+  <br><br><br>
+  <hr style="border-color: #CD0000">
+  <div class="bike">
+    <div class="bike-image-part">
+      <div class="bike-image">
+        <img src="images/gixxer.jpg" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Suzuki Gixxer</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/unicorn.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Honda Unicorn</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/jupiter.jpg" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">TVS Jupiter</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/honda shine.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Honda Shine</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/splendar.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Hero Splender</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/activa.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Honda Activa</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/fz5.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Yamaha FZ5</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/vespa.jpg" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Vespa Scooter</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/bajaj pulsar 220f.png" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Bajaj Pulsar</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+      <div class="bike-image">
+        <img src="images/maestro.jpg" style="width: 382px;height: 200px">
+        <h2 style="margin-left: 20px;">Hero Maestro</h2>
+        <p style="margin-left: 20px;font-size: 17px;color: black;">Start From $10 Per Day</p>
+        <button type="submit" class="submit" style="margin-left: 20px">Rent Car</button>
+        <hr>
+        <pre class="tab"><p style="text-align: center;color: black;font-size: 20px"><img src="images/felogo1.png" width="20px" height="20px">Model 2014ib  <img src="images/felogo2.png" width="20px" height="20px">32000 KM  <img src="images/felogo3.png" width="20px" height="20px">Auto</p></pre>
+      </div>
+    </div>
+    <div class="bike-details-part">
+      <dir class="bike-details-form">
+        <h1 class="title" style="margin-left: -20px">Reservation</h1>
+        <form action="Reservation.html" method="get">
+          <table style="width: 100%;margin-left: -21px">
+            <tr>
+              <td>
+                <select required="">
+                  <option value="1" selected="" >Honda Shine</option>
+                  <option value="3">Hero Splender</option>
+                  <option value="4">Honda Activa</option>
+                  <option value="5">Hero Maestro</option>
+                  <option value="6">Honda Unicorn</option>
+                  <option value="7">TVS Jupiter</option>
+                  <option value="8">Yamaha FZ5</option>
+                  <option value="9">Suzuki Gixxer</option>
+                  <option value="10">Bajaj Pulsar</option>
+                  <option value="11">Vespa Scooter</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Pickup Location" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="Drop Location" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="Date" placeholder="Pickup Date" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="time" placeholder="Pickup Time" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="Date" placeholder="Drop Date" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="time" placeholder="Drop Time" required=""></td>
+            </tr>
+            <tr>
+              <td><button type="submit" class="submit">Reservation</button></td>
+            </tr>
+          </table>
+        </form>
+      </dir>
+
+    </div>
+  </div>
+
+  <hr style="border-color: #CD0000">
+  <div class="last">
+    <div class="app-div5">
+      <img src="images/dp.png" style="margin-left: 20px;margin-top: 40px" width="60px" height="60px">
+      <p style="color: white; font-size: 17px;margin-left: 20px">Search the bike you want to ride and book it easily with online payment and we will provide one at your doorstep.Make sure you have licence to ride the bike.</p>
+          <br>
+          <a href="facebook.com"><img src="images/facebook.png" style="margin-left: 20px" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/twitter.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/in.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/google.png" height="35px" width="35px"></a>
+    </div>
+    <div class="app-div6">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Our Bikes</h2>
+      <br>
+      <ul style="list-style-type: sidama;margin-left: 20px;color: white">
+        <li>Honda Shine</li>
+        <li>Hero Splender</li>
+        <li>Honda Activa</li>
+        <li>Hero Maestro</li>
+        <li>Honda Unicorn</li>
+        <li>TVS Jupiter</li>
+        <li>Yamaha FZ5</li>
+        <li>Suzuki Gixxer</li>
+        <li>Bajaj Pulsar</li>
+        <li>Vespa Scooter</li>
+      </ul>
+    </div>
+
+    <div class="app-div8">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Contact Us</h2>
+      <br>
+      <div class="simbol">
+        <img src="images/llogo.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px" >A-12,Darshan Hostel,Changa,Anand</p>
+      <div class="simbol">
+        <img src="images/message.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">www.bikeisyours.com www.support.bikeisyours@gmail.com</p>
+      <div class="simbol">
+        <img src="images/phone.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">+91-8758588958 , +91-8980942662</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>BikeIsYours</title>
+  <link rel="shortcut icon" type="image/png" href="images/dp.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="comman.css">
+  <link rel="stylesheet" type="text/css" href="Home.css">
+  <script type="text/javascript" src="price.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src="scrollquery.js"></script>
+  <style type="text/css">
+body{ margin:0px }
+div#top{ background:url(topSliver.png) repeat-x; height:73px; font-size:36px; padding:20px 0px 0px 20px;  }
+div#middle{ min-width:800px; }
+div#middle > div{ float:left; width:25%; }
+div#middle > div > div{ border:#000 1px solid; padding: 20px; }
+div#middle > div > div > img{ width:100%; }
+div#bottom{ clear:left; background:#666; height:200px; }
+</style>
+</head>
+<body>
+  <div class="Container">
+  <div id="preloader"></div>
+  <div class="div1">
+    <div class="hdiv">
+      <div class="hdiv1">
+        <br>
+        <a href="https://www.facebook.com/profile.php?id=100008776566092" target="_blank"><img src="images/fb.png" height="35px" width="35px"></a>
+        <a href="https://twitter.com/pmkanani007" target="_blank"><img src="images/twitter.png" height="35px" width="35px"></a>
+        <a href="https://www.linkedin.com/in/parth-kanani-105763167/" target="_blank"><img src="images/in.png" height="35px" width="35px"></a>
+        <a href="https://www.instagram.com/parth_kanani/" target="_blank"><img src="images/insta.png" height="35px" width="35px"></a>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/llogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:10px "><br>Surat , Anand <br>and Nadiad</p>
+      </div>
+      <div class="hdiv1">
+        <div class="simbol">
+        <img src="images/tlogo.png" width="20px" height="20px">
+        </div>
+        <p style="margin-left:15px "><br> Everyday 07:00 am - 9.00 pm</p>
+      </div>
+      <div class="hdiv1">
+        <br>
+        <a href="signup.html" class="login-reg">Sign Up Now</a>
+      </div>
+
+    </div>
+    <img src="images/dp.png" align="left" width="80px" height="80px" style="margin-left: 150px; margin-top: 78px">
+    <div id="manu">
+      <div class="manudiv">
+        <a href="home.html"><p>Home</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="bikes.html"><p>Collection</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="history.html"><p>History</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="about.html"><p>About Us</p></a>
+      </div>
+      <div class="manudiv">
+        <a href="contact us.html"><p>Help</p></a>
+      </div>
+    </div>
+    <h1 style="margin-left: 150px;color: white">Find Your Own Bike<br><p style="font-size: 15px">Search the bike you want to ride and book it easily with<br>online payment and we will provide one at your doorstep.<br>Make sure you have licence to ride the bike.</p></h1>
+    <a href="bikes.html"><button style="margin-left: 150px;background-color: #CD0000;height: 40px;width: 130px; border: none;color: white">See All Bikes</button></a>
+  </div>
+
+  <div class="overlap">
+    <h1 class="title">Choose the Bike</h1>
+    <form class="reservform" action="reservation.html" method="get">
+      <table style="margin-left: 30px;width: 890px;">
+        <tr>
+          <td colspan="2">
+            <select id="no_of_part1" onchange="amount1()" required="">
+                  <option value="100$" selected>Kawasaki Ninja H2R</option>
+                  <option value="90$">KTM RC8</option>
+                  <option value="50$">Bajaj V22</option>
+                  <option value="40$">Honda Shaine</option>
+                  <option value="30$">Honda SP125</option>
+                  <option value="80$">Kawasaki Ninja 300</option>
+                  <option value="86$">Yamaha MT15</option>
+                  <option value="95$">Yamaha YZF R1</option>
+                  <option value="60$">Bajaj Pulsar 220F</option>
+                  <option value="20$">TVS Apach RTR180</option>
+                </select>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="Pickup Location" required=""></td>
+          <td><input type="text" placeholder="Drop Location" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="Date" placeholder="Pickup Date" required=""></td>
+          <td><input type="Date" placeholder="Drop Date" required=""></td>
+        </tr>
+        <tr>
+          <td><input type="time" placeholder="Pickup Time" required=""></td>
+          <td><input type="time" placeholder="Drop Time" required=""></td>
+        </tr>
+        <tr>
+          <td>
+            <b style="margin-left: 30px">Total:</b>
+          </td>
+          <td>
+            <p id="result" style="color: black"><b>0 $</b></p>
+          </td>
+        </tr>
+        <tr>
+          <td><button type="submit" class="submit">Book Now</button></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <h1 style="text-align: center;">Our Awsome Features</h1>
+  <img src="images/header-line.png" style="margin-left: 575px ">
+  <p style="text-align: center;color: black">Here are some findfull features<br>that lets you make very comfortable.</p>
+  <br>
+    <div id="left_side">
+      <img src="images/cust.png" style="margin-left: 115px;margin-top: 30px"  height="70px" width="70px">
+      <p style="text-align: center;color: black;font-size: 25px"><b>Full Service</b></p>
+      <p style="text-align: center;color: black">We will provide you helmet and <br>so you don't have to carry it <br> with yourself</p>
+    </div>
+    <div id="right_side">
+      <img src="images/serv.png" style="margin-left: 115px;margin-top: 30px"  height="70px" width="70px" >
+      <p style="text-align: center;color: black;font-size: 25px"><b>Fast Services</b></p>
+      <p style="text-align: center;color: black">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Through our instant service you will &nbsp;&nbsp;reach at your location accurately</p>
+    </div>
+    <div id="center_s">
+      <img src="images/ex.png" style="margin-left: 115px;margin-top: 30px"  height="70px" width="70px" >
+      <p style="text-align: center;color: black;font-size: 25px"><b>Customer Support</b></p>
+      <p style="text-align: center;color: black">If you need any help regarding booking<br>of the bike you can contact us anytime</p>
+    </div>
+    <br>
+    <div class="app-view">
+      <div class="app-div">
+        <p style="font-size: 40px;color: blue;margin-left: 80px"><b>Wellcome to BikeIsYours.com</b></p>
+        <p style="font-size: 20px;color: red;margin-left: 80px">&nbsp;&nbsp;&nbsp;<b>Steps to follow:</b></p>
+        <img src="images/1.png" style="margin-left: 80px" align="left" width="50px" height="50px">
+        <p style="color: green;font-size: 20px;margin-top: 30px">&nbsp;&nbsp;Download Bike Rent App</p>
+        <img src="images/2.png" style="margin-left: 80px" align="left" width="50px" height="50px">
+        <p style="color: green;font-size: 20px;margin-top: 35px">&nbsp;&nbsp;Choose The Bike You Like</p>
+        <img src="images/3.png" style="margin-left: 80px" align="left" width="50px" height="50px">
+        <p style="color: green;font-size: 20px;margin-top: 35px">&nbsp;&nbsp;Bike Reservation</p>
+      </div>
+      <div >
+        <img src="images/bike.png" style="margin-top: 20px;margin-left: 30px">
+      </div>
+    </div>
+    <h1 style="text-align: center;">Expert Support Team</h1>
+    <img src="images/header-line.png" style="margin-left: 113px">
+
+
+  <div class="app-div3" id="left_side">
+    <div class="container">
+      <img src="images/dhruvin.png" height="10px" width="400px" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Dhruvin Koshiya<br><p style="text-align: center;">Co-Founder</p></div>
+        </div>
+    </div>
+  </div>
+  <div class="app-div3" id="right_side">
+    <div class="container">
+      <img src="images/parth.jpg"  height="10px" width="400px" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Parth Kanani<br><p style="text-align: center;">Co-Founder</p></div>
+        </div>
+    </div>
+  </div>
+
+  <div class="consultation">
+    <div class="consultation-div" id="myBox">
+      <div class="consultation-pic-div">
+        <img src="images/honda.png" width="120px" height="120px">
+      </div>
+      <div class="consultation-pic-div">
+        <img src="images/tvs.png" width="120px" height="120px">
+      </div>
+      <div class="consultation-pic-div">
+        <img src="images/bajaj.png" width="120px" height="120px">
+      </div>
+      <div class="consultation-pic-div">
+        <img src="images/bmw.png" width="120px" height="120px">
+      </div>
+      <div class="consultation-pic-div">
+        <img src="images/hero.png" width="120px" height="120px">
+      </div>
+      <div class="consultation-pic-div">
+        <img src="images/suzuki.png" width="120px" height="120px">
+      </div>
+    </div>
+    <div class="consultation-div">
+      <p style="color: blue;margin-top: 20px;margin-left: 25px;font-size: 45px;"><b>Free Consultation<b></p>
+        <form action="home.php" method="POST">
+          <table style="margin-left: 25px;height: 385px" >
+            <tr>
+              <td><input type="text" placeholder="First Name" required=""></td>
+              <td><input type="text" placeholder="Last Name" required=""></td>
+            </tr>
+            <tr>
+              <td><input type="E-mail" name="email" placeholder="E-mail Address" required=""></td>
+              <td><input type="phone" placeholder="phone No." required=""></td>
+            </tr>
+            <tr>
+              <td colspan="2"><textarea rows="5" name="message" placeholder="Message" required=""></textarea></td>
+            </tr>
+            <tr>
+              <td><button type="submit" class="submit">Submit Now</button></td>
+            </tr>
+          </table>
+        </form>
+    </div>
+  </div>
+
+  <hr style="border-color: #CD0000">
+  <div class="last">
+    <div class="app-div5">
+      <img src="images/dp.png" style="margin-left: 20px;margin-top: 40px" width="60px" height="60px">
+      <p style="color: white; font-size: 17px;margin-left: 20px">Search the bike you want to ride and book it easily with online payment and we will provide one at your doorstep.Make sure you have licence to ride the bike.</p>
+          <br>
+          <a href="facebook.com"><img src="images/facebook.png" style="margin-left: 20px" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/twitter.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/in.png" height="35px" width="35px"></a>
+          <a href="facebook.com"><img src="images/google.png" height="35px" width="35px"></a>
+    </div>
+    <div class="app-div6">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Our Bikes</h2>
+      <br>
+      <ul style="list-style-type: sidama;margin-left: 20px;color: white">
+        <li>Honda Shine</li>
+        <li>Hero Splender</li>
+        <li>Honda Activa</li>
+        <li>Hero Maestro</li>
+        <li>Honda Unicorn</li>
+        <li>TVS Jupiter</li>
+        <li>Yamaha FZ5</li>
+        <li>Suzuki Gixxer</li>
+        <li>Bajaj Pulsar</li>
+        <li>Vespa Scooter</li>
+      </ul>
+    </div>
+
+    <div class="app-div8">
+      <h2 style="color: white;margin-left: 20px;margin-top: 40px">Contact Us</h2>
+      <br>
+      <div class="simbol">
+        <img src="images/llogo.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px" >A-12,Darshan Hostel,Changa,Anand</p>
+      <div class="simbol">
+        <img src="images/message.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">www.bikeisyours.com www.support.bikeisyours@gmail.com</p>
+      <div class="simbol">
+        <img src="images/phone.png" style="margin-left: 20px;margin-top: 5px"  align="left"  width="20px" height="20px">
+      </div>
+      <br>
+      <p style="margin-left: 60px">+91-8758588958 , +91-8980942662</p>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+  <script>
+      new Darkmode().showWidget();
+  </script>
+  <script>
+      var options = {
+           bottom: '64px', // default: '32px'
+           right: 'unset', // default: '32px'
+           left: '32px', // default: 'unset'
+           time: '0.5s', // default: '0.3s'
+           mixColor: '#fff', // default: '#fff'
+           backgroundColor: '#fff',  // default: '#fff'
+           buttonColorDark: '#100f2c',  // default: '#100f2c'
+           buttonColorLight: '#fff', // default: '#fff'
+           saveInCookies: false, // default: true,
+           label: '🌓', // default: ''
+           autoMatchOsTheme: true // default: true
+      }
+
+  </script>
+</body>
+</html>
